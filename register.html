@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Register</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="logo">Logo</div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput"
+                        placeholder="Search employees...">
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <nav class="nav-menu" id="navMenu">
+                    <a href="register.html">Employee Register</a>
+                    <a href="list.html">Employee List</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>Employee Register</h2>
+            <form id="employeeForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="position" placeholder="Position"
+                    required>
+                <textarea id="about" placeholder="About" required></textarea>
+                <input type="date" id="joining_date" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <footer>
+            &copy; 2024 Ayush Agrawal
+        </footer>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
